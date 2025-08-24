@@ -6,12 +6,12 @@
   "author": "Onur Nizam <onur.nizam@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/onurnizam/shamir-secret-sharing-extended.git"
+    "url": "git+https://github.com/onur-nizam/shamir-secret-sharing-extended.git"
   },
   "bugs": {
-    "url": "https://github.com/onurnizam/shamir-secret-sharing-extended/issues"
+    "url": "https://github.com/onur-nizam/shamir-secret-sharing-extended/issues"
   },
-  "homepage": "https://github.com/onurnizam/shamir-secret-sharing-extended#readme",
+  "homepage": "https://github.com/onur-nizam/shamir-secret-sharing-extended#readme",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
