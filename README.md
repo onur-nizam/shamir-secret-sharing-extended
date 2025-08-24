@@ -1,3 +1,5 @@
+[![CI](https://github.com/onur-nizam/shamir-secret-sharing-extended/actions/workflows/ci.yml/badge.svg)](https://github.com/onur-nizam/shamir-secret-sharing-extended/actions/workflows/ci.yml)
+
 # shamir-secret-sharing-extended
 
 A **zero-dependency** TypeScript library that implements **Shamir’s Secret Sharing (SSS)** — a cryptographic scheme that splits a secret into multiple pieces (“shares”) so that only a **threshold number of shares** can reconstruct it.  
