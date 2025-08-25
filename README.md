@@ -73,4 +73,40 @@ This library provides a **modern, developer-friendly implementation** of SSS wit
 - ✅ Multiple serialization formats.  
 - ✅ Works in Node ≥16 & modern browsers.  
 - ✅ Distributed as ESM + CJS + TypeScript types.  
- 
+
+## 🚀 Basic Usage
+
+Install the package:
+
+```bash
+npm i shamir-secret-sharing-extended
+
+import { splitString, combineStrings } from "shamir-secret-sharing-extended";
+
+async function main() {
+  /**
+   * Share format can be one of the following:
+   * - "base64"
+   * - "string"
+   * - "binary"
+   * - "json"
+   */
+  const shareFormat = "base64";
+
+  /**
+   * Encryption key is optional:
+   * - If not provided → shares are stored in plain format.
+   * - If provided → should be a string (e.g. 32 bytes for AES-256-GCM).
+   */
+  const key = "my-secret-key";
+
+  // Split the secret into 5 shares, with threshold = 3
+  const shares = await splitString("hello-world", { shares: 5, threshold: 3, format: shareFormat }, key);
+  console.log("Shares:", shares);
+
+  // Combine any 3 shares to recover the original string
+  const recovered = await combineStrings([shares[0], shares[1], shares[2]], shareFormat, key);
+  console.log("Recovered:", recovered);
+}
+
+main();
