@@ -80,7 +80,11 @@ Install the package:
 
 ```bash
 npm i shamir-secret-sharing-extended
+```
 
+Test Code
+
+```bash
 import { splitString, combineStrings } from "shamir-secret-sharing-extended";
 
 async function main() {
@@ -110,3 +114,4 @@ async function main() {
 }
 
 main();
+```
