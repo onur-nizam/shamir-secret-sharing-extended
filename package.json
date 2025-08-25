@@ -33,7 +33,7 @@
   "scripts": {
     "start": "tsx src/demo.ts",
     "build": "tsc -p tsconfig.json",
-    "test": "vitest run",
+    "test": "vitest run --config vitest.config.ts",
     "test:gf256": "vitest run test/gf256.test.ts",
     "test:poly": "vitest run test/polynomial.test.ts",
     "test:rng": "vitest run test/rng.test.ts",
