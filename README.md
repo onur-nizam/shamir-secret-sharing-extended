@@ -6,7 +6,7 @@ A **zero-dependency** TypeScript library that implements **Shamir’s Secret Sha
 
 - **Threshold security**: e.g., split a key into 5 shares, and require any 3 of them to recover the secret.  
 - **Zero runtime dependencies**: relies only on the platform’s built-in Web Crypto API.  
-- **Lightweight & portable**: works in Node.js (≥16) and modern browsers.  
+- **Lightweight & portable**: works in Node.js (≥18) and modern browsers.  
 - **Encryption option**: supports optional AES-256-GCM encryption of shares at rest.  
 - **Flexible formats**: `json`, `string`, `binary`, or `base64`.  
 - **Dual distribution**: ESM + CJS + TypeScript definitions.  
@@ -71,7 +71,7 @@ This library provides a **modern, developer-friendly implementation** of SSS wit
 - ✅ No runtime dependencies (only built-in crypto).  
 - ✅ Optional AES-256-GCM per-share encryption.  
 - ✅ Multiple serialization formats.  
-- ✅ Works in Node ≥16 & modern browsers.  
+- ✅ Works in Node ≥18 & modern browsers.  
 - ✅ Distributed as ESM + CJS + TypeScript types.  
 
 ## 🚀 Basic Usage
@@ -115,3 +115,9 @@ async function main() {
 
 main();
 ```
+
+---
+
+## 📌 Author
+
+Developed with ❤️ by [Onur Nizam](https://github.com/onur-nizam)
